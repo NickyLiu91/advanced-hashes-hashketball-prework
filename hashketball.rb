@@ -234,3 +234,16 @@ def winning_team
     return team_two_score
   end
 end
+
+def player_with_longest_name
+  aarray = all_players
+  longest_name = nil
+  array.each do |key, value|
+    if key = :player_name
+      if longest_name == nil || longest_name.length < value.length
+        longest_name = value
+      end
+    end
+  end
+  longest_name
+end
