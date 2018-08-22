@@ -251,10 +251,10 @@ end
 def long_name_steals_a_ton?
   longest_name = player_with_longest_name
   longest_name_steal = 0
-  
-  
+
+
   all_players.each do |key, value|
-    if key[:name] == longest_name 
+    if key[:name] == longest_name
       longest_name_steal = key[:steals]
     end
   end
